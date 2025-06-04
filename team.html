@@ -33,6 +33,17 @@
       </div>
     </header>
 
+    <section class="cover-phototeam">
+      <img src="assets/teamcover.jpeg" alt="Cover Photo">
+      <div class="cover-text">
+        <h1></h1>
+      </div>
+    </section>
+
+    
+    
+    
+
     <section class="team-intro">
       <div class="intro-text">
         <h1>Meet Our Team</h1>
@@ -41,6 +52,36 @@
         </p>
       </div>
     </section>
+
+
+    <section class="cover-video-container">
+      <video id="coverVideo" class="cover-video" autoplay muted loop playsinline>
+        <source src="https://github.com/ServingChampions/RegalTeamVideo/blob/main/trim4.mov?raw=true" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="unmuteButton" class="video-unmute-button">Unmute</button>
+    </section>
+    
+    
+    <script>
+      document.getElementById('unmuteButton').addEventListener('click', function () {
+        const video = document.getElementById('coverVideo');
+        video.muted = false;
+        video.volume = 1.0;
+        this.style.display = 'none';
+      });
+    </script>
+
+<script>
+  document.getElementById('unmuteButton').addEventListener('click', function () {
+    const video = document.getElementById('coverVideo');
+    video.muted = false;
+    video.volume = 1.0;
+    video.play(); // Ensure it plays again with sound
+    this.style.display = 'none';
+  });
+</script>
+
 
 
     <section class="team-section">
@@ -111,8 +152,6 @@
     <hr class="thin-grey-line">
     <p>© 2024 Regal Construction Custom Homes. License #885896, Licensed, Bonded, and Insured.</p>
   </section>
-    
-      
   
       <script src="script.js"></script>
      </body>
