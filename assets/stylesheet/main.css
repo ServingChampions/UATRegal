@@ -384,6 +384,64 @@ team
   ========================================
 */
 
+.cover-phototeam {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust this to control the vertical height */
+  overflow: hidden;
+}
+
+.cover-phototeam img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the area while preserving aspect ratio */
+  display: block;
+}
+
+.cover-phototeam .cover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+
+.cover-video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Take up full screen height */
+  overflow: hidden;
+  background-color: black; /* Fallback background */
+}
+
+.cover-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the space, crop edges if needed */
+  display: block;
+}
+
+
+
+.video-unmute-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 6px;
+}
+
+
+
+
 /* Team Intro Section */
 .team-intro {
   text-align: center;
