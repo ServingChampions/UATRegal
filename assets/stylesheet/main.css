@@ -1368,3 +1368,26 @@ responsive
     object-position: center 40%; /* Adjust this percentage to move the focal point up or down */
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .cover-video-container {
+    height: 50vh; /* Reduce height more if it still feels too big */
+  }
+
+  .cover-video {
+    object-fit: contain; /* Show full video instead of cropping */
+    height: 100%;
+    width: 100%;
+  }
+
+  .video-unmute-button {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
