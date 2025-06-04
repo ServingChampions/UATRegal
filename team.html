@@ -31,7 +31,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header>  
 
     <section class="cover-phototeam">
       <img src="assets/teamcover.jpeg" alt="Cover Photo">
@@ -39,9 +39,7 @@
         <h1></h1>
       </div>
     </section>
-
-    
-    
+        
     
 
     <section class="team-intro">
@@ -54,33 +52,17 @@
     </section>
 
 
-    <section class="cover-video-container">
-      <video id="coverVideo" class="cover-video" autoplay muted loop playsinline>
-        <source src="https://github.com/ServingChampions/RegalTeamVideo/blob/main/trim4.mov?raw=true" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button id="unmuteButton" class="video-unmute-button">Unmute</button>
-    </section>
-    
-    
-    <script>
-      document.getElementById('unmuteButton').addEventListener('click', function () {
-        const video = document.getElementById('coverVideo');
-        video.muted = false;
-        video.volume = 1.0;
-        this.style.display = 'none';
-      });
-    </script>
 
-<script>
-  document.getElementById('unmuteButton').addEventListener('click', function () {
-    const video = document.getElementById('coverVideo');
-    video.muted = false;
-    video.volume = 1.0;
-    video.play(); // Ensure it plays again with sound
-    this.style.display = 'none';
-  });
-</script>
+    <div style="padding:45% 0 0 0;position:relative;">
+      <iframe 
+        src="https://player.vimeo.com/video/1090631567?h=4d1b2eb892&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+        title="Regal">
+      </iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 
 
 
